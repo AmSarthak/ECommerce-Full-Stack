@@ -1,7 +1,7 @@
 import axios from "axios"
 
 
-const inventoryBaseURl = "http://localhost:3000";
+const inventoryBaseURl = "http://localhost:5001";
 const backendBaseUrl = "http://localhost:8080";
 
 const apiService = {

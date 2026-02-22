@@ -64,4 +64,23 @@ This project was built to:
   Implement database interaction without ORM abstraction
   
   Simulate production-like service architecture
-  
+
+DOCKER COMMANDS:
+
+#INVENTORY
+docker build -t inventory-app .
+docker run -p 3000:3000 inventory-app
+
+#FRONTEND
+
+docker build -t frontend-app .
+docker run -p 3001:80 frontend-app
+
+#BACKEND
+
+
+#COMPLETE APP
+
+In root folder ->
+
+docker compose up --build 

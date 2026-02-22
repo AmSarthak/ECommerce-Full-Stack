@@ -1,0 +1,28 @@
+# version: "3.8"
+
+services:
+  inventory:
+    build: 
+      context: ./Inventory
+    container_name: inventory-app
+    ports:
+      - "5001:3000"
+    # depends_on:
+    #   - inventory
+    networks:
+      - inventory-network
+
+  frontend:
+    build: 
+      context: ./Frontend
+    container_name: frontend-app
+    ports:
+      - "3002:80"
+    depends_on:
+      - inventory
+    networks:
+      - inventory-network
+
+networks:
+  inventory-network:
+    driver: bridge
