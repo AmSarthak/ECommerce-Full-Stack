@@ -24,6 +24,7 @@ Spring Boot
 JDBC (No ORM abstraction)
 MySQL
 REST APIs
+Invoice Download in PDF format
 
 🗄 Database
 MySQL
