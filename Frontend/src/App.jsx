@@ -16,14 +16,11 @@ function App() {
   function Login(username,pwd){
 
     apiService.makePostCall("Backend" , "/login" , {id: 0 ,username : username , password : pwd} , (response)=>{
-        if(response == "Logged In"){
-          setIsLoggedIn(true);
-        }
-        else{
+        setIsLoggedIn(true)
+      } , (error)=>{
           setIsLoggedIn(false);
-          alert("Invalid Credentials. Please try again");
-        }
-    })
+         alert("Login Failed")
+      })
   }
 
   function goToCart(){

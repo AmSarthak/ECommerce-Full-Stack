@@ -79,15 +79,22 @@ This project was built to:
 DOCKER COMMANDS:
 
 #INVENTORY
+
 docker build -t inventory-app .
+
 docker run -p 3000:3000 inventory-app
+
 
 #FRONTEND
 
 docker build -t frontend-app .
+
 docker run -p 3001:80 frontend-app
 
+
 #BACKEND
+
+Backend run from Local for development
 
 
 #COMPLETE APP
