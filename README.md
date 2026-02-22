@@ -6,25 +6,36 @@ The project demonstrates real-world system design concepts, including service se
 🖥 Frontend
 
 React
+
 Axios
+
 Functional Components + Hooks
+
 
 🔧 Backend Services
 
 1️⃣ Inventory Service
 
 Node.js
+
 Express
+
 REST APIs
+
 In-memory / service-managed inventory
 
 2️⃣ Order / Core Backend
 
 Spring Boot
+
 JDBC (No ORM abstraction)
+
 MySQL
+
 REST APIs
+
 Invoice Download in PDF format
+
 
 🗄 Database
 MySQL
