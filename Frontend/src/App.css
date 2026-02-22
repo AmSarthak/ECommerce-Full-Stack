@@ -5,34 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
 }
@@ -42,113 +14,119 @@
 }
 
 .product-card {
-            background: var(--surface);
-            width: 300px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
+  background: var(--surface);
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
-        }
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
 
-        /* Image Section */
-        .image-container {
-            width: 100%;
-            height: 200px;
-            background: #eee;
-            position: relative;
-            overflow: hidden;
-        }
+/* Image Section */
+.image-container {
+  width: 100%;
+  height: 200px;
+  background: #eee;
+  position: relative;
+  overflow: hidden;
+}
 
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-        /* Badge/Chip */
-        .badge {
-            position: absolute;
-            top: 12px;
-            left: 12px;
-            background: var(--primary);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 16px;
-            font-size: 12px;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
+/* Badge/Chip */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--primary);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
-        /* Content Section */
-        .content {
-            padding: 16px;
-        }
+/* Content Section */
+.content {
+  padding: 16px;
+}
 
-        .category {
-            color: var(--text-sub);
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
+.category {
+  color: var(--text-sub);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
 
-        .title {
-            color: var(--text-main);
-            font-size: 20px;
-            font-weight: 600;
-            margin: 0 0 12px 0;
-        }
+.title {
+  color: var(--text-main);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
 
-        .price-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 16px;
-        }
-
-        .price {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary);
-        }
-
-        /* Button Style */
-        .btn-add {
-            background: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-weight: 600;
-            text-transform: uppercase;
-            transition: all 0.2s;
-            cursor: pointer;
-        }
-
-        .btn-add:hover {
-            background: var(--primary);
-            color: white;
-        }
-        :root {
-            --primary: #6200ee;
-            --surface: #ffffff;
-            --text-main: #212121;
-            --text-sub: #757575;
-            --shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
-            --shadow-hover: 0 10px 20px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.1);
-        }
-        .product-grid {
+.price-row {
   display: flex;
-  flex-direction: row; /* Align items horizontally */
-  flex-wrap: wrap;     /* Move to next line if no space */
-  gap: 20px;           /* Space between cards */
-  justify-content: center; /* Center cards on the page */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Button Style */
+.btn-add {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background: var(--primary);
+  color: white;
+}
+
+:root {
+  --primary: #6200ee;
+  --surface: #ffffff;
+  --text-main: #212121;
+  --text-sub: #757575;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-grid {
+  display: flex;
+  flex-direction: row;
+  /* Align items horizontally */
+  flex-wrap: wrap;
+  /* Move to next line if no space */
+  gap: 20px;
+  /* Space between cards */
+  justify-content: center;
+  /* Center cards on the page */
   padding: 20px;
 }
 
@@ -162,45 +140,51 @@
 
 /* Optional: Ensure cards have a consistent base width */
 .product-card {
-  flex: 0 1 280px; /* Don't grow, allow shrink, base width 280px */
+  flex: 0 1 280px;
+  /* Don't grow, allow shrink, base width 280px */
 }
+
 /* Container for the Cart items */
 ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin: 20px 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
 }
 
 /* Individual Cart Line Styling */
 ul li {
-    background: #ffffff;
-    padding: 12px 24px;
-    border-radius: 4px; /* Material standard rounded corners */
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 
-                0px 1px 1px 0px rgba(0,0,0,0.14), 
-                0px 1px 3px 0px rgba(0,0,0,0.12); /* Material "Elevation 2" */
-    min-width: 300px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
-    color: #424242;
-    transition: box-shadow 0.2s ease-in-out;
+  background: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  /* Material standard rounded corners */
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  /* Material "Elevation 2" */
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  color: #424242;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 ul li:hover {
-    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 
-                0px 3px 4px 0px rgba(0,0,0,0.14), 
-                0px 1px 8px 0px rgba(0,0,0,0.12); /* Lift on hover */
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  /* Lift on hover */
 }
 
 /* Styling the price/number specifically if you want it to stand out */
 ul li::after {
-    font-weight: bold;
-    color: #6200ee; /* Primary Material color */
+  font-weight: bold;
+  color: #6200ee;
+  /* Primary Material color */
 }
 
 /* Container to center the card */
@@ -209,7 +193,7 @@ ul li::after {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background-color:white;
+  background-color: white;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -261,11 +245,12 @@ ul li::after {
 }
 
 /* Shrink label when focused or input has text */
-.input-group input:focus ~ label, 
+.input-group input:focus~label,
 .input-group label.shrink {
   top: -20px;
   font-size: 12px;
-  color: #6200ee; /* Material Purple */
+  color: #6200ee;
+  /* Material Purple */
 }
 
 /* Bottom Bar Animation */
@@ -286,7 +271,7 @@ ul li::after {
   left: 50%;
 }
 
-.input-group input:focus ~ .bar:before {
+.input-group input:focus~.bar:before {
   width: 100%;
   left: 0;
 }
@@ -304,13 +289,13 @@ ul li::after {
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background 0.3s, box-shadow 0.3s;
 }
 
 .material-btn:hover {
   background-color: #3700b3;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer-links {
@@ -321,4 +306,68 @@ ul li::after {
   font-size: 14px;
   color: #6200ee;
   text-decoration: none;
+}
+.cart-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #1a1a1a; /* Dark sleek background */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px; /* Pill shape */
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin-left: 1050px;
+}
+
+/* The Hover Effect */
+.cart-button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* The Active (Click) Effect */
+.cart-button:active {
+  transform: translateY(0);
+}
+
+/* Badge Styling */
+.cart-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #ff3e3e; /* Bright red alert */
+  color: white;
+  font-size: 0.75rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1a1a1a; /* Matches button bg to look "cut out" */
+  font-weight: bold;
+}
+
+/* Subtle icon animation on hover */
+.cart-button:hover svg {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
 }

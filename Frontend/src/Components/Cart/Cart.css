@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #6200ee;
+  --bg-color: #f5f5f5;
+  --surface-color: #ffffff;
+  --text-main: #212121;
+  --text-secondary: #757575;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+/* Items Section */
+.cart-items-list {
+  flex: 2;
+  min-width: 300px;
+}
+
+.cart-title {
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+.cart-card {
+  background: var(--surface-color);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.cart-card:hover {
+  transform: translateY(-2px);
+}
+
+.item-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.item-qty {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Summary Section */
+.cart-summary-card {
+  flex: 1;
+  min-width: 280px;
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+
+.summary-title { margin-top: 0; }
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  color: var(--text-secondary);
+}
+
+.total {
+  font-weight: bold;
+  color: var(--text-main);
+  font-size: 1.2rem;
+}
+
+.free-text { color: #4caf50; font-weight: bold; }
+
+.divider { border: 0; border-top: 1px solid #eee; margin: 1.5rem 0; }
+
+/* Buttons */
+.checkout-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(98, 0, 238, 0.3);
+  letter-spacing: 1px;
+}
+
+.checkout-btn:hover { opacity: 0.9; }
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ff5252;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
